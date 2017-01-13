@@ -82,23 +82,22 @@ void resetCache() {
 }
 
 int main() {
-    // use number of sets instead of n-way
-//    resetCache();
-//    printf("First Test:\n");
-//    sim(16, 128, 8, test_set_1);
-//    printf("\n");
-//
-//    resetCache();
-//    printf("Second Test:\n");
-//    sim(4, 64, 8, test_set_1);
-//    printf("\n");
-//
-//    resetCache();
-//    printf("Third Test:\n");
-//    sim(8, 128, 16, test_set_1);
-//    printf("\n");
+   resetCache();
+   printf("First Test:\n");
+   sim(16, 128, 8, test_set_1);
+   printf("\n");
 
-    resetCache();
-    printf("Fourth Test:\n");
-    sim(8192, 131072, 8, test_set_1);
+   resetCache();
+   printf("Second Test:\n");
+   sim(4, 64, 8, test_set_1);
+   printf("\n");
+
+   resetCache();
+   printf("Third Test:\n");
+   sim(8, 128, 16, test_set_1);
+   printf("\n");
+
+   resetCache();
+   printf("Fourth Test:\n");
+   sim(8192, 131072, 8, test_set_1);
 }
